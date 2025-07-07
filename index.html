@@ -37,12 +37,14 @@
             </div>
             
             <div class="input-wrapper">
-              <label for="birthdate">Data de nascimento</label>
+              <label for="birth">Data de nascimento</label>
               <input
-               id="birthdate" 
-               name="birthdate"
+               id="birth" 
+               name="birth"
                lang="pt-BR"
                type="date">
+            </div>
+
                 <div class="select-wrapper">
                  <label for="gender">Sexo</label>
                  <select name="gender" id="gender">
@@ -52,7 +54,7 @@
                  </select>
                 </div>
 
-                <div class="textarea-wraper">
+                <div class="textarea-wrapper">
                   <label for="medical-info">Informações médicas</label>
                   <textarea
                    id="medical-info" 
@@ -81,6 +83,43 @@
                   </div>
 
                 </div>
+          </fieldset>
+
+          <fieldset class="address">
+            <legend>Endereço residencial</legend>
+
+            <div class="input-wrapper">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep">
+            </div>
+
+           <div class="flex">
+              <div class="input-wrapper flex-2">
+              <label for="street">Rua</label>
+              <input type="text" id="street" name="street"
+              value="Rua das Flores" disabled>
+            </div>           
+
+              <div class="input-wrapper flex-1">
+              <label for="number">Número</label>
+              <input type="number" id="number" name="number">           
+            </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+              <label for="city">Cidade</label>
+              <input type="text" id="city" name="city"
+              value="São Paulo" disabled>
+            </div>
+            
+            
+              <div class="input-wrapper flex-1">
+              <label for="state">Estado</label>
+              <input type="text" id="state" name="state" disabled>
+            </div>
+            </div>
+
           </fieldset>
         </form>          
       </div>
